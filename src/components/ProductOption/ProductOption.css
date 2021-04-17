@@ -38,13 +38,6 @@
   font-size: 14px;
   line-height: 16px;
 }
-hr {
-}
-
-.option-scroller {
-  /* height: 436px; */
-  overflow-y: scroll;
-}
 
 .button-add {
   display: flex;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Plus from '../../assets/plus.svg';
-import Minus from '../../assets/minus.svg';
 
 import './ProductOption.css';
 import QuantitySelector from '../QuantitySelector/QuantitySelector';
@@ -26,9 +25,13 @@ export default function ProductOption(props) {
           />
         )}
       </div>
-      <p className="option-price">
-        + <span>{props.price}</span>
-      </p>
+      {props.price ? (
+        <p className="option-price">
+          + <span>R${props.price.toFixed(2)}</span>
+        </p>
+      ) : (
+        ''
+      )}
     </div>
   );
 }
