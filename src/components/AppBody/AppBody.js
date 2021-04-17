@@ -8,7 +8,7 @@ import QuantitySelector from '../QuantitySelector/QuantitySelector';
 
 export default function AppBody(props) {
   return (
-    <div className="page-body px-16 py-6 flex lg:flex-row flex-col justify-between">
+    <div className="page-body px-4 md:px-16 py-6 flex lg:flex-row flex-col justify-between">
       {props.product ? (
         <>
           <ProductDescription product={props.product} />
