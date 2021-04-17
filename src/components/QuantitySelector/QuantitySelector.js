@@ -1,3 +1,4 @@
+import './QuantitySelector.css';
 import React from 'react';
 import Plus from '../../assets/plus.svg';
 import Minus from '../../assets/minus.svg';

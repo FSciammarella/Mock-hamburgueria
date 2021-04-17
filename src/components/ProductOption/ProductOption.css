@@ -14,9 +14,6 @@
   display: flex;
   justify-content: space-between;
 }
-.quantity-selector > img {
-  width: 14px;
-}
 
 .option-selector {
   display: flex;
@@ -29,27 +26,15 @@
   width: 14px;
 }
 
-.quantity-selector > * {
-  margin: 8px 9px;
-}
-
 .option-price {
   color: #f09035;
   font-size: 14px;
   line-height: 16px;
 }
 
-.button-add {
-  display: flex;
-  align-items: center;
-  flex-grow: 0;
-  width: 58%;
-  border-radius: 4px;
-  background-color: #f09035;
-  color: white;
-  font-size: 14px;
-  line-height: 10px;
-  letter-spacing: 0.33px;
-  text-align: center;
-  font-weight: 500;
+.option-separator {
+  height: 0px;
+  border: 0px;
+  border-bottom: 1px solid #e8a634;
+  margin: 9px 0px;
 }

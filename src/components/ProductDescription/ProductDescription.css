@@ -1,0 +1,13 @@
+.product-description {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.preco {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.preco-desconto {
+  color: #dc6e05;
+}

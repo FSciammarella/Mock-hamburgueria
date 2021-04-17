@@ -1,0 +1,6 @@
+.quantity-selector > img {
+  width: 14px;
+}
+.quantity-selector > * {
+  margin: 8px 9px;
+}

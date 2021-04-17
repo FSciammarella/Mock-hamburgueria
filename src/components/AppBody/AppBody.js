@@ -1,3 +1,5 @@
+import './AppBody.css';
+
 import React from 'react';
 import OptionModal from '../OptionModal/OptionModal';
 import ProductDescription from '../ProductDescription/ProductDescription';

@@ -1,0 +1,16 @@
+.modal-warning {
+  --yellow-light: rgba(253, 215, 14, 0.2);
+  --yellow-darker: #e49700;
+}
+.modal-warning {
+  background-color: var(--yellow-light);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.modal-warning > p {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: normal;
+  color: var(--yellow-darker);
+}
