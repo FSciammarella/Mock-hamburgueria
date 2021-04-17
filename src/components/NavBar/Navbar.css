@@ -1,0 +1,67 @@
+.navbar {
+  background-color: #f4f4f4;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar span {
+  color: var(--primary-color);
+}
+
+.product-title {
+  display: flex;
+  align-items: center;
+  line-height: 28px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.page-body {
+  color: #4e4e4e;
+}
+
+.product-description {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.preco {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.preco-desconto {
+  color: #dc6e05;
+}
+
+.preco-normal {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.modal-warning {
+  --yellow-light: rgba(253, 215, 14, 0.2);
+  --yellow-darker: #e49700;
+}
+.modal-warning {
+  background-color: var(--yellow-light);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.modal-warning > p {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: normal;
+  color: var(--yellow-darker);
+}
+
+.option-separator {
+  height: 0px;
+  border: 0px;
+  border-bottom: 1px solid #e8a634;
+  margin: 9px 0px;
+}
+
+.busca {
+  border: 1px solid #ed3237;
+}
