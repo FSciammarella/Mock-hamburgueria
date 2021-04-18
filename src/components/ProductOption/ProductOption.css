@@ -6,13 +6,13 @@
 
 .quantity-selector {
   min-width: 89px;
-  max-width: 200px;
   border: #dc6e05 solid 1px;
-  height: 32px;
   font-size: 14px;
   line-height: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .option-selector {

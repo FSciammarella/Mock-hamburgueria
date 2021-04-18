@@ -24,7 +24,7 @@ function App() {
   }, [product]);
   return (
     <>
-      <NavBar product={product} />
+      <NavBar />
       <div className="App mx-auto">
         <AppBody product={product} />
       </div>

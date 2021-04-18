@@ -1,6 +1,7 @@
 import './AppBody.css';
 
 import React from 'react';
+
 import OptionModal from '../OptionModal/OptionModal';
 import ProductDescription from '../ProductDescription/ProductDescription';
 import ProductOption from '../ProductOption/ProductOption';
@@ -27,6 +28,7 @@ export default function AppBody(props) {
                         key={opt.id}
                         description={opt.nm_item}
                         price={opt.vl_item}
+                        type={group.type}
                       />
                       <div className="option-separator" />
                     </>
@@ -34,16 +36,16 @@ export default function AppBody(props) {
                 </>
               ))}
             </div>
-            <div className="flex flex-row justify-between mt-5">
+            <div className="flex flex-row gap-8 justify-between mt-5">
               <QuantitySelector quantity={0} />
-              <div className="button-add items-center justify-center">
+              <div className="button-add items-center justify-center h-10">
                 Adicionar
               </div>
             </div>
           </div>
         </>
       ) : (
-        ''
+        'Carregando'
       )}
     </div>
   );
