@@ -1,6 +1,6 @@
 import './AppBody.css';
 
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import OptionModal from '../OptionModal/OptionModal';
 import ProductDescription from '../ProductDescription/ProductDescription';
@@ -16,24 +16,23 @@ export default function AppBody(props) {
           <div className="rounded-xl lg:border-2  lg:border-gray lg:p-8 lg:w-2/5">
             <div className="lg:max-h-537 md:overflow-y-auto">
               {props.product.ingredients.map((group) => (
-                <>
+                <Fragment key={group.group}>
                   <OptionModal
                     title={group.group}
                     key={group.group}
                     subtitle={`Até ${group.max_itens} ingredientes`}
                   />
                   {group.itens.map((opt) => (
-                    <>
+                    <Fragment key={opt.id}>
                       <ProductOption
-                        key={opt.id}
                         description={opt.nm_item}
                         price={opt.vl_item}
                         type={group.type}
                       />
                       <div className="option-separator" />
-                    </>
+                    </Fragment>
                   ))}
-                </>
+                </Fragment>
               ))}
             </div>
             <div className="flex flex-row gap-8 justify-between mt-5">

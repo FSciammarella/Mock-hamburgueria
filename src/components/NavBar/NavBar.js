@@ -14,7 +14,9 @@ export default function NavBar(props) {
           <img src={Logo} alt="" className="h-8 md:h-12" />
           <div className="hidden lg:flex flex-grow ml-6 flex-row justify-end mt-6 mb-6">
             <DeliveryAddress
-              options={['R. Antonio Braune, 222', 'Rua 123 de Oliveira 4']}
+              options={Array(20)
+                .fill(null)
+                .map((el, idx) => 'R. Antonio Braune, ' + (idx + 1))}
             />
             <form
               className="flex flex-shrink-0 flex-grow ml-6 md:h-12"
