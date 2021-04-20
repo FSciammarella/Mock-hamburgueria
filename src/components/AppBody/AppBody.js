@@ -13,7 +13,7 @@ export default function AppBody(props) {
       {props.product ? (
         <>
           <ProductDescription product={props.product} />
-          <div className="rounded-xl lg:border-2  lg:border-gray lg:p-8 lg:w-2/5">
+          <div className="rounded-xl lg:border-2  lg:border-gray lg:p-8 lg:w-2/5 select-none">
             <div className="lg:max-h-537 md:overflow-y-auto">
               {props.product.ingredients.map((group) => (
                 <Fragment key={group.group}>

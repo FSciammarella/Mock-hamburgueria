@@ -3,20 +3,19 @@ import NavBar from '../NavBar/NavBar';
 import axios from 'axios';
 import './App.css';
 import AppBody from '../AppBody/AppBody';
+import mock from './response.json';
 function App() {
   const [product, setProduct] = useState(null);
 
   useEffect(
-    () =>
-      axios
-        .get(
-          'https://6077803e1ed0ae0017d6aea4.mockapi.io/test-frontend/products'
-        )
-        .then((res) => {
-          let data = res.data[0];
-          // delete data.vl_discount;
-          setProduct(data);
-        }),
+    axios
+      .get('https://6077803e1ed0ae0017d6aea4.mockapi.io/test-frontend/products')
+      .then((res) => {
+        let data = res.data[0];
+        // delete data.vl_discount;
+        setProduct(data);
+      })
+      .catch((err) => setProduct(mock)),
     []
   );
   useEffect(() => {
